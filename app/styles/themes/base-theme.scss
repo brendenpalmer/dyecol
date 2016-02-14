@@ -76,9 +76,7 @@ ul.smaller-font {
 ul.colors {
   list-style-type: none;
   width: 100%;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
+  padding: 0;
 }
 ul.colors li {
   display: inline-block;
@@ -88,9 +86,6 @@ ul.colors li {
   height: 12.5vw;
   opacity: 0.4;
   cursor: pointer;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
 }
 ul.colors.small li {
   width: 8.3333%;

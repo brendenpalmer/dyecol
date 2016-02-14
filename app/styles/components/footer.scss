@@ -11,6 +11,9 @@ footer {
   width: 100%;
   width: 100vw;
   position: relative;
+  .wrapper {
+    padding: 0;
+  }
 }
 .inner-footer .left {
   float: left;
@@ -19,7 +22,7 @@ footer {
   float: right;
 }
 .inner-footer .right h2 {
-  margin: 1.45em 0 0;
+  margin: 2.7em 0 0;
   font-size: 0.8em;
 }
 ul.keyboard-shortcuts {

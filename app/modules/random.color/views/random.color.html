@@ -3,7 +3,7 @@
     'background-color': randomColor.bgColor
   }">
     <ul class="colors">
-      <li ng-repeat="color in randomColor.colors track by $index" ng-style="{
+      <li class="transition" ng-repeat="color in randomColor.colors track by $index" ng-style="{
         'background': color.baseRgb
       }"></li>
     </ul>
