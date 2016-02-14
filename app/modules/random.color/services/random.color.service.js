@@ -33,10 +33,10 @@
        */
       this.updateBgColor = function() {
         _bgColor = [];
-        
-        _bgColor.push(Color.getRandomRgbColor());
-        _bgColor.push(Color.getRandomRgbColor());
-        _bgColor.push(Color.getRandomRgbColor());
+
+        _bgColor.push(Color.adjustBrightness(Color.getRandomRgbColor(), 45));
+        _bgColor.push(Color.adjustBrightness(Color.getRandomRgbColor(), 45));
+        _bgColor.push(Color.adjustBrightness(Color.getRandomRgbColor(), 45));
       };
 
       return this;

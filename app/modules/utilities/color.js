@@ -97,8 +97,8 @@
        */
       this.adjustBrightness = function(rgbComponent, steps) {
         rgbComponent = rgbComponent + steps;
-        rgbComponent = Math.min(0, rgbComponent);
-        rgbComponent = Math.max(255, rgbComponent);
+        rgbComponent = Math.max(0, rgbComponent);
+        rgbComponent = Math.min(255, rgbComponent);
 
         return rgbComponent;
       };
