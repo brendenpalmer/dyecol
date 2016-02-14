@@ -22,7 +22,7 @@ footer {
   float: right;
 }
 .inner-footer .right h2 {
-  margin: 2.7em 0 0;
+  margin: 2.6em 0 0;
   font-size: 0.8em;
 }
 ul.keyboard-shortcuts {
@@ -39,4 +39,20 @@ ul.keyboard-shortcuts li {
 }
 ul.keyboard-shortcuts li:first-of-type {
   margin-left: 0;
+}
+@media only screen and (max-width:768px) {
+  .inner-footer .left {
+    display: none;
+  }
+  .inner-footer .right {
+    float: none;
+    height: auto;
+  }
+  .inner-footer .right h2 {
+    width: 100%;
+    font-size: 1em;
+    margin: 0 auto 0;
+    padding: .75em 0;
+    text-align: center;
+  }
 }
