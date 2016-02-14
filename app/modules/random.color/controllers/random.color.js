@@ -10,8 +10,35 @@
 
   angular.module('dyecol.random.color')
     .controller('RandomColorController', function(
-      $scope
+      $scope,
+      ColorListItem,
+      RandomColorService
     ) {
-      this.bgColor = 'background:rgb(83,186,117);';
+      // update the bg color
+      RandomColorService.updateBgColor();
+
+      /**
+       * @ngdoc property
+       * @propertyOf dyecol.random.color:RandomColorController
+       * @name bgColor
+       * @type {string}
+       */
+      this.bgColor = 'rgb(' +
+        RandomColorService.getBgColor()[0] + ',' +
+        RandomColorService.getBgColor()[1] + ',' +
+        RandomColorService.getBgColor()[2] + ')';
+
+      /**
+       * @ngdoc property
+       * @propertyOf dyecol.random.color:RandomColorController
+       * @name colors
+       * @type {Array}
+       */
+      this.colors = [];
+
+      // initialize colors
+      for (var i = 0; i < 300; i++) {
+        this.colors.push(new ColorListItem());
+      }
     });
 })();

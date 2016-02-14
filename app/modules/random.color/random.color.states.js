@@ -9,7 +9,8 @@
   'use strict';
 
   angular.module('dyecol.random.color', [
-      'dyecol.constants'
+      'dyecol.constants',
+      'dyecol.color.util'
     ])
     .config(function(
       $stateProvider,

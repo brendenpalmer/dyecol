@@ -3,6 +3,9 @@
     'background-color': randomColor.bgColor
   }">
     <ul class="colors">
+      <li ng-repeat="color in randomColor.colors track by $index" ng-style="{
+        'background': color.baseRgb
+      }"></li>
     </ul>
     <p class="bold bottom-text center center-text">
       <span class="desktop">Press the space bar for more colors!</span>
