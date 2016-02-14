@@ -5,7 +5,7 @@
   }">
     <ul class="colors">
       <li class="transition" ng-repeat="color in randomColor.colors track by $index" ng-style="{
-        'background': color.baseRgb
+        'background': color.bg
       }" ng-click="randomColor.active.color = color; randomColor.active.show = true;"></li>
     </ul>
     <p class="bold bottom-text center center-text">

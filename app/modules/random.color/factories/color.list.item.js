@@ -24,7 +24,7 @@
         this._r = Color.getRandomRgbColor();
         this._g = Color.getRandomRgbColor();
         this._b = Color.getRandomRgbColor();
-
+        this.bg = 'rgb(' + this._r + ',' + this._g + ',' + this._b + ')';
         this.initBaseColors();
         this.initHoverColors();
       }
