@@ -1,0 +1,27 @@
+<div id="show-color-details" class="modal" ng-class="{
+  'open': modal.color !== null
+}">
+  <div class="wrapper">
+    <div class="content border-radius">
+      <div class="color-base" ng-style="{
+        'background': modal.color.baseRgb
+      }">
+        <p class="center center-text">
+          <span class="bold">Base Color</span>
+          <br>
+          <span class="hex-color">{{ modal.color.baseHex }}</span> / <span class="rgb-color">{{ modal.color.baseRgb }}</span>
+        </p>
+      </div>
+      <div class="color-hover" ng-style="{
+        'background': modal.color.hoverRgb
+      }">
+        <p class="center center-text">
+          <span class="bold">Hover Color</span>
+          <br>
+          <span class="hex-color">{{ modal.color.hoverHex }}</span> / <span class="rgb-color">{{ modal.color.hoverRgb }}</span>
+        </p>
+      </div>
+      <button id="close-modal" class="button transition" ng-click="modal.closeModal()">close</button>
+    </div>
+  </div>
+</div>

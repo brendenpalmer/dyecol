@@ -7,15 +7,15 @@
 ;(function () {
     'use strict';
 
-    angular.module('dyecol.ui.modal', [])
+    angular.module('dyecol.random.color')
         .directive('modal', function () {
             return {
                 restrict: 'E',
                 transclude: true,
-                templateUrl: 'modules/modal/directives/views/modal.html',
+                templateUrl: 'modules/random.color/directives/views/modal.html',
                 scope: {},
                 bindToController: {
-                    modalOpen: '='
+                    color: '='
                 },
                 controllerAs: 'modal',
                 controller: function ($scope) {
@@ -25,7 +25,7 @@
                      * Closes the modal
                      */
                     this.closeModal = function () {
-                        this.modalOpen = false;
+                        this.color = null;
                         $scope.$applyAsync();
                     };
                 }

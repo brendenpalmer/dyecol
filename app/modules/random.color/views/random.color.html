@@ -1,3 +1,4 @@
+<modal color="randomColor.active.color"></modal>
 <div class="outer-main-content">
   <div class="main-content" ng-style="{
     'background-color': randomColor.bgColor
@@ -5,7 +6,7 @@
     <ul class="colors">
       <li class="transition" ng-repeat="color in randomColor.colors track by $index" ng-style="{
         'background': color.baseRgb
-      }"></li>
+      }" ng-click="randomColor.active.color = color"></li>
     </ul>
     <p class="bold bottom-text center center-text">
       <span class="desktop">Press the space bar for more colors!</span>

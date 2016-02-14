@@ -36,6 +36,16 @@
        */
       this.colors = [];
 
+      /**
+       * @ngdoc property
+       * @propertyOf dyecol.random.color:RandomColorController
+       * @name active
+       * @type {Object}
+       */
+      this.active = {
+        color: null
+      };
+
       // initialize colors
       for (var i = 0; i < 300; i++) {
         this.colors.push(new ColorListItem());
