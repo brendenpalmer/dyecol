@@ -43,7 +43,8 @@
        * @type {Object}
        */
       this.active = {
-        color: null
+        color: null,
+        show: false
       };
 
       // initialize colors

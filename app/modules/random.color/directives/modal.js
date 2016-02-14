@@ -15,7 +15,8 @@
                 templateUrl: 'modules/random.color/directives/views/modal.html',
                 scope: {},
                 bindToController: {
-                    color: '='
+                    color: '=',
+                    showModal: '='
                 },
                 controllerAs: 'modal',
                 controller: function ($scope) {
@@ -25,7 +26,7 @@
                      * Closes the modal
                      */
                     this.closeModal = function () {
-                        this.color = null;
+                        this.showModal = false;
                         $scope.$applyAsync();
                     };
                 }
