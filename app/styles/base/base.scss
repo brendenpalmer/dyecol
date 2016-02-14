@@ -1,0 +1,133 @@
+//Author: Brenden Palmer
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  /** Height for html and body **/
+  height: 100%;
+  max-width: 100%;
+}
+textarea,
+input,
+html,
+select,
+body,
+p,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+button,
+ul,
+li {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+ ::-moz-selection {
+  /** Selection colors **/
+  background: #FF4E50;
+  color: #f5f5f5;
+}
+ ::selection {
+  /** Selection colors **/
+  background: #FF4E50;
+  color: #f5f5f5;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+p {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin: 0 0 2em;
+  font-weight: 300;
+}
+h2,
+.h2,
+h1.h2,
+h3.h2,
+h4.h2,
+h5.h2,
+h6.h2 {
+  font-size: 2.2em;
+  line-height: 1.1em;
+  margin: 0 0 1em;
+  font-weight: 300;
+}
+h3,
+.h3,
+h1.h3,
+h2.h3,
+h4.h3,
+h5.h3,
+h6.h3 {
+  font-size: 1.75em;
+  line-height: 1.3em;
+  margin: 0 0 1em;
+  font-weight: 300;
+}
+h4,
+.h4,
+h1.h4,
+h2.h4,
+h3.h4,
+h5.h4,
+h6.h4 {
+  font-size: 1.35em;
+  line-height: 1.6667em;
+  margin: 0 0 1em;
+  font-weight: 300;
+}
+h5,
+.h5,
+h1.h5,
+h2.h5,
+h3.h5,
+h4.h5,
+h6.h5 {
+  font-size: 1.2em;
+  line-height: 1.6667em;
+  margin: 0 0 1em;
+  font-weight: 300;
+}
+h6,
+.h6,
+h1.h6,
+h2.h6,
+h3.h6,
+h4.h6,
+h5.h6 {
+  font-size: 1em;
+  line-height: 1em;
+  margin: 0;
+  font-weight: 300;
+}
+.sub-heading,
+p.sub-heading,
+h1.sub-heading,
+h2.sub-heading,
+h3.sub-heading,
+h4.sub-heading,
+h5.sub-heading,
+h6.sub-heading {
+  margin-top: 2.25em;
+  margin-bottom: 2.25em;
+}
+.bold,
+h1.bold,
+h2.bold,
+h3.bold,
+h4.bold,
+h5.bold,
+h6.bold,
+p.bold {
+  font-weight: 700;
+}

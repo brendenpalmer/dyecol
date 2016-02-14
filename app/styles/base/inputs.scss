@@ -1,0 +1,90 @@
+//Author: Brenden Palmer
+ ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #757575;
+}
+ :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #757575;
+  opacity: 1;
+}
+ ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #757575;
+  opacity: 1;
+}
+ :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #757575;
+}
+.select-style {
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid rgba(0,0,0,0.12);
+  padding: 0.5em;
+  font-size: 1.4em;
+  position: relative;
+  color: #444444;
+}
+.select-style:hover {
+  border: 1px solid rgba(0,0,0,0.3);
+}
+.select-style .fa {
+  position: absolute;
+  top: 50%;
+  right: 0.8em;
+  transform: translateY(-50%);
+  color: #757575;
+  font-size: 75%;
+}
+.select-style select {
+  color: inherit;
+  font-size: 100%;
+  width: 130%;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  background-image: none;
+  appearance: none;
+}
+.input {
+  appearance: none;
+  width: 100%;
+  display: block;
+  border: 1px solid rgba(0,0,0,0.12);
+  margin: 0.5em 0;
+  font-size: 1.2em;
+  font-weight: 300;
+  outline: none;
+  background: transparent;
+  background: rgba(0,0,0,0);
+  color: #444444;
+  padding: 0.5em 0 0.5em 0.5em;
+  border-radius: 0.15em;
+  box-sizing: border-box;
+}
+.input.top {
+  margin-top: 0;
+}
+.input.no-margin {
+  margin: 0;
+}
+.input:focus {
+  border: 1px solid rgba(0,0,0,0.3);
+}
+.input.error {
+  color: rgb(224,0,0);
+  border: 1px solid rgba(225,0,0,0.6);
+}
+.input.error:focus {
+  border: 1px solid rgba(225,0,0,0.85);
+}
+.input.success {
+  border: 1px solid rgba(18,150,0,0.6);
+  color: rgb(18,150,0);
+}
+.input.success:focus {
+  border: 1px solid rgba(18,150,0,0.85);
+}

@@ -1,0 +1,54 @@
+//Author: Brenden Palmer
+.underline {
+  text-decoration: underline;
+}
+.italic {
+  font-style: italic;
+}
+.text-shadow {
+  text-shadow: 0 0 0.1em rgba(0,0,0,0.25);
+}
+.clear {
+  clear: both;
+}
+.half-width {
+  width: 50%;
+}
+p.center {
+  text-align: left;
+}
+.center.left-align-text,
+.left-align-text {
+  text-align: left;
+}
+.center-text,
+p.center-text {
+  text-align: center;
+}
+.right-align-text,
+p.right-align-text {
+  text-align: right;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.regularcase {
+  text-transform: none;
+}
+.block {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.mobile {
+  display: none;
+}
+@media only screen and (max-width:768px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}

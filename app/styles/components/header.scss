@@ -1,0 +1,77 @@
+//Author: Brenden Palmer
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.inner-header {
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 0.2em rgba(0,0,0,0.05);
+  width: 100%;
+  width: 100vw;
+  position: relative;
+}
+.inner-header .svg h1 {
+  margin: 0;
+  height: 60px;
+
+  svg {
+    margin: 0;
+    width: 4.5em;
+  }
+}
+.svg {
+  float: left;
+}
+h2.tagline {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-left: 1em;
+}
+.svg h1,
+.svg h2,
+.outer-disable-hover {
+  display: inline-block;
+  vertical-align: middle;
+}
+.outer-disable-hover {
+  margin-left: 2em;
+}
+.right {
+  float: right;
+  height: 20px;
+}
+.options {
+  height: inherit;
+  margin-top: 0.9em;
+}
+.outer-disable-enable-hover {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 7em;
+}
+.facebook,
+.twitter {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 32px;
+  margin-left: 2rem;
+}
+.facebook i,
+.twitter i {
+  font-size: 1.5rem;
+  color: inherit;
+}
+.twitter a {
+  color: rgba(85,172,238,0.5);
+}
+.facebook a {
+  color: rgba(66,109,199,0.5);
+}
+.twitter a:hover {
+  color: #55acee;
+}
+.facebook a:hover {
+  color: #426DC7;
+}

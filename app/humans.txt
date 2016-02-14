@@ -1,0 +1,10 @@
+/* TEAM */
+	Brenden Palmer
+	Contact: brendenpalmer@gmail.com
+	From: San Francisco Bay Area
+
+/* SITE */
+	Last update: 2016/02/13
+	Language: English
+	Doctype: HTML5
+	IDE: Atom

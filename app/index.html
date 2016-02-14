@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="dyecol">
+
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title ng-bind="pageTitle"></title>
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700,300italic,400italic" rel="stylesheet" type="text/css" />
+
+  <!-- build:css(.tmp) styles.css -->
+  <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <!-- endbuild -->
+</head>
+
+<body>
+  <div ui-view="header"></div>
+  <div ui-view="main"></div>
+
+  <!-- build:js scripts.js -->
+  <script src="../node_modules/angular/angular.min.js"></script>
+  <script src="../node_modules/angular-animate/angular-animate.min.js"></script>
+  <script src="../node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+  <script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+  <script src="app.js"></script>
+  <script src="constants.js"></script>
+
+  <script src="modules/navigation/navigation.states.js"></script>
+  <script src="modules/navigation/controllers/header.js"></script>
+  <script src="modules/navigation/controllers/footer.js"></script>
+
+  <script src="modules/random.color/random.color.states.js"></script>
+  <script src="modules/random.color/controllers/random.color.js"></script>
+
+  <script src="modules/modal/directives/modal.js"></script>
+
+  <script src="../.tmp/templates.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

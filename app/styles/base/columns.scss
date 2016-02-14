@@ -1,0 +1,122 @@
+//Author: Brenden Palmer
+.transition {
+  transition: all 0.4s ease;
+}
+.background-transition {
+  transition: background 0.07s linear;
+}
+.transition.slow,
+.work-example:after {
+  transition: all 0.75s ease;
+}
+.transition.fast {
+  transition: all 0.25s ease;
+}
+.transition-delay {
+  transition-delay: 0.5s;
+}
+.transition.ease-in {
+  transition-timing-function: ease-in;
+}
+.transition.ease-out {
+  transition-timing-function: ease-out;
+}
+/** BORDER RADIUS **/
+.border-radius {
+  border-radius: 0.25em;
+}
+.border-radius.more {
+  border-radius: 0.4em;
+}
+.border-radius.less {
+  border-radius: 0.08em;
+}
+.border-radius.circle,
+.work-example:after {
+  border-radius: 50%;
+}
+/** BORDERS **/
+.border {
+  border: 0.08em solid rgba(0,0,0,0.1);
+}
+.border-right {
+  border-right: 0.08em solid rgba(0,0,0,0.1);
+}
+.border-left {
+  border-left: 0.08em solid rgba(0,0,0,0.1);
+}
+.border-top {
+  border-top: 0.08em solid rgba(0,0,0,0.1);
+}
+.border-bottom {
+  border-bottom: 0.08em solid rgba(0,0,0,0.1);
+}
+.border-right.thick,
+.border-bottom.thick,
+.border-top.thick,
+.border-left.thick,
+.border.thick {
+  border-width: 1.5em;
+}
+.border-right.normal,
+.border-bottom.normal,
+.border-top.normal,
+.border-left.normal,
+.border.normal {
+  border-width: 1.2em;
+}
+/** COLUMNS **/
+.one-fourth,
+.one-third,
+.one-half,
+.two-thirds,
+.three-fourths,
+.full {
+  width: 22%;
+  height: 100%;
+  display: inline-block;
+  margin-left: 2%;
+  margin-top: 0;
+}
+.one-fourth .wrapper,
+.one-third .wrapper,
+.one-half .wrapper,
+.two-thirds .wrapper,
+.three-fourths .wrapper,
+.full .wrapper {
+  width: 100%;
+}
+.full {
+  display: block;
+  width: 100%;
+}
+.one-third {
+  width: 31%;
+}
+.one-half {
+  width: 47%;
+}
+.one-half.inner-column {
+  width: 48%;
+}
+.two-thirds {
+  width: 63%;
+}
+.three-fourths {
+  width: 72%;
+}
+.columns {
+  margin-bottom: 2em;
+}
+.columns.last {
+  margin-bottom: 0;
+}
+.columns-text {
+  margin: 0;
+}
+.columns-text.right-align-text {
+  margin-right: 1em;
+}
+.columns-text.left-align-text {
+  margin-left: 1em;
+}

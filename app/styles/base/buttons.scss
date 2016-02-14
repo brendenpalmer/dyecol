@@ -1,0 +1,54 @@
+//Author: Brenden Palmer
+.button {
+  box-sizing: border-box;
+  appearance: none;
+  padding: 0.5em 1.2em;
+  margin: 0;
+  background-color: rgb(255,78,80);
+  background-color: rgba(255,78,80,0.75);
+  color: #f5f5f5;
+  font-size: 0.8em;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  font-weight: 300;
+  backface-visibility: hidden;
+  border-radius: 0.12em;
+  text-decoration: none;
+  text-align: center;
+}
+.button:hover {
+  background-color: rgba(249,212,35,0.75);
+  color: #666666;
+  text-decoration: none;
+}
+.button:active {
+  box-shadow: inset 0 0 2em rgba(0,0,0,0.08);
+}
+.button.error {
+  background-color: rgba(219,26,26,0.9);
+}
+.button.error:hover {
+  background-color: rgba(219,26,26,1);
+}
+.error-text,
+.warning-text {
+  padding: 1em 0;
+  border: 1px solid rgba(225,0,0,0.5);
+  color: #b94a48;
+  background-color: rgba(225,0,0,0.12);
+  font-size: 1em;
+  margin: 1.5em auto 0.8em;
+  display: none;
+}
+.warning-text {
+  margin: 0.2em auto;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  color: #c09853;
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+}
+.error-color {
+  color: rgb(224,0,0);
+}
