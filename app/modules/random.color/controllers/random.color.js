@@ -12,12 +12,23 @@
     .controller('RandomColorController', function(
       $scope,
       ColorListItem,
+      NavigationService,
       RandomColorService
     ) {
       var _ctrl = this;
 
       // initialize
       _init();
+
+      /**
+       * @ngdoc property
+       * @propertyOf dyecol.random.color:RandomColorController
+       * @name view
+       * @type {Object}
+       */
+      this.view = {
+        disableHover: false
+      };
 
       /**
        * @ngdoc property
@@ -64,10 +75,11 @@
        * @private
        */
       function _keydown(e) {
-        if (e.keyCode === 32) { //space key
+        if (e.keyCode === 32) { // space key
           e.preventDefault();
           _init();
-          $scope.$applyAsync();
+        } else if (e.keyCode === 72) { // h to toggle hover)
+          _toggleHover();
         } else if (_ctrl.active.show === true) {
           var _index = _ctrl.colors.indexOf(_ctrl.active.color);
           if (e.keyCode === 39) { // next
@@ -81,16 +93,32 @@
           } else if (e.keyCode === 27) { //esc key
             _ctrl.active.show = false;
           }
-          $scope.$applyAsync();
         }
+
+        $scope.$applyAsync();
       }
 
       // add the event listener
       document.addEventListener('keydown', _keydown);
 
+      // subscribe to disableHover
+      var _remove = NavigationService.subscribe('toggleHover', _toggleHover);
+
       // remove the event listener on $destroy
       $scope.$on('$destroy', function() {
         document.removeEventListener('keydown', _keydown);
+        _remove();
       });
+
+      /**
+       * @ngdoc method
+       * @methodOf dyecol.random.color:RandomColorController
+       * @name _toggleHover
+       * @description
+       * Toggles hover
+       */
+      function _toggleHover() {
+        _ctrl.view.disableHover = !_ctrl.view.disableHover;
+      }
     });
 })();
