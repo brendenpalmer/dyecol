@@ -150,13 +150,6 @@ ul.colors.biggest li {
   }
 }
 @media only screen and (max-width:900px) {
-  .outer-disable-enable-hover {
-    margin-right: 0;
-  }
-  .facebook,
-  .twitter {
-    display: none;
-  }
   ul.keyboard-shortcuts li {
     width: 8em;
   }
@@ -178,9 +171,6 @@ ul.colors.biggest li {
   }
   .bottom-text {
     padding-bottom: 7rem;
-  }
-  .outer-disable-enable-hover {
-    display: none;
   }
   ul.colors li {
     width: 20%;

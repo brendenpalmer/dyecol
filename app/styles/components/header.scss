@@ -15,7 +15,6 @@ header {
 .inner-header .svg h1 {
   margin: 0;
   height: 60px;
-
   svg {
     margin: 0;
     width: 4.5em;
@@ -74,4 +73,21 @@ h2.tagline {
 }
 .facebook a:hover {
   color: #426DC7;
+}
+@media only screen and (max-width:900px) {
+  .outer-disable-enable-hover {
+    margin-right: 0;
+  }
+  .facebook,
+  .twitter {
+    display: none;
+  }
+}
+@media only screen and (max-width:768px) {
+  .outer-disable-enable-hover {
+    display: none;
+  }
+  h2.tagline {
+    font-size: 0.85rem;
+  }
 }
