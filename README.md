@@ -1,6 +1,6 @@
 # dyecol
 
-* The front-end for dyecol.com.
+* The front-end for [dyecol.com](http://dyecol.com).
 
 ## Installation
 
